@@ -1,0 +1,21 @@
+sisi_1 = input("Masukkan Sisi Pertama : ")
+sisi_2 = input("Masukkan Sisi Kedua   : ")
+sisi_3 = input("Masukkan Sisi Ketiga  : ")
+
+try:
+
+    sisi_pertama = int(sisi_1)
+    sisi_kedua = int(sisi_2)
+    sisi_ketiga = int(sisi_3)
+
+    if sisi_pertama <= 0 and sisi_kedua <= 0 and sisi_ketiga <= 0:
+       print("Tidak Valid")
+    elif sisi_pertama == sisi_kedua == sisi_ketiga:
+        print("3 Sisi Sama")
+    elif sisi_pertama == sisi_kedua != sisi_ketiga or sisi_pertama != sisi_kedua == sisi_ketiga or sisi_pertama == sisi_ketiga != sisi_kedua:
+        print("2 Sisi Sama")
+    else:
+        print("Tidak Ada Yang Sama")
+    
+except:
+ print("Format Input Salah")
